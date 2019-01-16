@@ -1,4 +1,4 @@
-package com.Sec;
+package main.ui;
 
 import javax.swing.*;
 import java.awt.*;

@@ -1,4 +1,6 @@
-package com.Sec;
+package main.ui;
+
+import main.crypto.CryptoUtils;
 
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
@@ -9,13 +11,12 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
 import java.nio.file.Path;
-import java.security.Key;
 
 public class DesktopUI {
 
-    private final File root = new File("/");
-    public Path pathDirectToEncrypt = root.toPath();
-    public Path pathDirectToDecrypt = root.toPath();
+    private final File root = new File("/home/");
+    private Path pathDirectToEncrypt = root.toPath();
+    private Path pathDirectToDecrypt = root.toPath();
 
     private JList<File> listSecretFile = new JList<File>();
 
@@ -23,15 +24,15 @@ public class DesktopUI {
         initUI();
     }
 
-    public void setPathDirectToEncrypt(Path pathDirectToEncrypt) {
+    private void setPathDirectToEncrypt(Path pathDirectToEncrypt) {
         this.pathDirectToEncrypt = pathDirectToEncrypt;
 
     }
-    public void setPathDirectToDecrypt(Path pathDirectToDecrypt){
+    private void setPathDirectToDecrypt(Path pathDirectToDecrypt){
         this.pathDirectToDecrypt = pathDirectToDecrypt;
     }
 
-    public void setListSecretFile(String pathSecretFolder) {
+    private void setListSecretFile(String pathSecretFolder) {
         File secretFolder = new File(pathSecretFolder);
         File[] listFiles = secretFolder.listFiles();
         DefaultListModel<File> listModel = new DefaultListModel<>();
@@ -78,8 +79,7 @@ public class DesktopUI {
             public void actionPerformed(ActionEvent e) {
                 makeJFileChoose(1);
                 setListSecretFile(String.valueOf(pathDirectToEncrypt));
-                //setDes(String.valueOf(pathDirectToEncrypt));
-                System.out.println("PathDirecChoose: " + String.valueOf(pathDirectToEncrypt));
+                System.out.println("PathDirecChoose: " + pathDirectToEncrypt);
 
             }
         });
@@ -105,8 +105,6 @@ public class DesktopUI {
         //make JTextField to show PathFile choosed and view Tree
         JTextField pathFileJText = new JTextField();
         JTree leftTree = new JTree(new FileTreeModel(root));
-        //rightTree = new JTree(new FileTreeModel(des));
-        //setListSecretFile(String.valueOf(pathDirectToEncrypt));
 
         setListSecretFile(String.valueOf(pathDirectToEncrypt));
         JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
@@ -133,10 +131,7 @@ public class DesktopUI {
                     @Override
                     public void mouseReleased(MouseEvent e) {
                         super.mouseReleased(e);
-                        if (e.getButton() == MouseEvent.BUTTON3) {
-                            popupMenu.show(e.getComponent(), e.getX(), e.getY());
-
-                        }
+                        handleMouseEvent(e,popupMenu);
                     }
                 });
             }
@@ -149,9 +144,7 @@ public class DesktopUI {
                     @Override
                     public void mouseReleased(MouseEvent e1) {
                         super.mouseReleased(e1);
-                        if (e1.getButton() == MouseEvent.BUTTON3) {
-                            popupMenu1.show(e1.getComponent(), e1.getX(), e1.getY());
-                        }
+                        handleMouseEvent(e1,popupMenu1);
                     }
                 });
             }
@@ -161,42 +154,15 @@ public class DesktopUI {
         encryptFile.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String textJtext = pathFileJText.getText();
-                File inputFile = new File(textJtext);
-
-                JPanel panel = new JPanel(new BorderLayout(5, 5));
-                JPanel label = new JPanel(new GridLayout(0, 1, 2, 2));
-                label.add(new JLabel("Password", SwingConstants.RIGHT));
-                label.add(new JLabel("Confirm", SwingConstants.RIGHT));
-                panel.add(label, BorderLayout.WEST);
-                JPanel controls = new JPanel(new GridLayout(0, 1, 2, 2));
-                JPasswordField password1 = new JPasswordField();
-                controls.add(password1);
-                JPasswordField password2 = new JPasswordField();
-                controls.add(password2);
-                panel.add(controls, BorderLayout.CENTER);
-                String stringPassword1;
-                String stringPassword2;
-                int n = 0;
-                do {
-                    password1.setText("");
-                    password2.setText("");
-                    if (n == 0) {
-                        JOptionPane.showMessageDialog(frame, panel, "Password", JOptionPane.QUESTION_MESSAGE);
-                        n++;
-                        stringPassword1 = String.valueOf(password1.getPassword());
-                        stringPassword2 = String.valueOf(password2.getPassword());
-                    } else {
-                        JOptionPane.showMessageDialog(frame, panel, "Check your password", JOptionPane.ERROR_MESSAGE);
-                        stringPassword1 = String.valueOf(password1.getPassword());
-                        stringPassword2 = String.valueOf(password2.getPassword());
-                    }
+                String pathFileEncrypt = pathFileJText.getText();
+                File inputFile = new File(pathFileEncrypt);
 
 
-                } while (!stringPassword1.equals(stringPassword2));
+                String stringPassword = validate(frame);
 
-                if (!stringPassword1.equals("")) {
-                    CryptoUtils.encrypt(stringPassword1,inputFile, pathDirectToEncrypt,1);
+                if (!stringPassword.equals("")) {
+                    CryptoUtils cryptoUtils= new CryptoUtils();
+                    cryptoUtils.crypto(stringPassword,inputFile, pathDirectToEncrypt,1);
                 }
                 leftTree.updateUI();
                 setListSecretFile(String.valueOf(pathDirectToEncrypt));
@@ -207,43 +173,15 @@ public class DesktopUI {
         decryptFile.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                File selectedDirect1 = null;
-                Path pathfileDecrypt = listSecretFile.getSelectedValue().toPath();
-                File inputFile = new File(String.valueOf(pathfileDecrypt));
+                Path pathFileDecrypt = listSecretFile.getSelectedValue().toPath();
+                File inputFile = new File(String.valueOf(pathFileDecrypt));
                 System.out.println("File decrypt : "+inputFile);
-                JPanel panel = new JPanel(new BorderLayout(5, 5));
-                JPanel label = new JPanel(new GridLayout(0, 1, 2, 2));
-                label.add(new JLabel("Password", SwingConstants.RIGHT));
-                label.add(new JLabel("Confirm", SwingConstants.RIGHT));
-                panel.add(label, BorderLayout.WEST);
-                JPanel controls = new JPanel(new GridLayout(0, 1, 2, 2));
-                JPasswordField password1 = new JPasswordField();
-                controls.add(password1);
-                JPasswordField password2 = new JPasswordField();
-                controls.add(password2);
-                panel.add(controls, BorderLayout.CENTER);
-                String stringPassword1;
-                String stringPassword2;
-                int n = 0;
-                do {
-                    password1.setText("");
-                    password2.setText("");
-                    if (n == 0) {
-                        JOptionPane.showMessageDialog(frame, panel, "Password", JOptionPane.QUESTION_MESSAGE);
-                        n++;
-                        stringPassword1 = String.valueOf(password1.getPassword());
-                        stringPassword2 = String.valueOf(password2.getPassword());
-                    } else {
-                        JOptionPane.showMessageDialog(frame, panel, "Check your password", JOptionPane.ERROR_MESSAGE);
-                        stringPassword1 = String.valueOf(password1.getPassword());
-                        stringPassword2 = String.valueOf(password2.getPassword());
-                    }
 
+                String stringPassword = validate(frame);
 
-                } while (!stringPassword1.equals(stringPassword2));
-
-                if (!stringPassword1.equals("")) {
-                    CryptoUtils.encrypt(stringPassword1,inputFile, pathDirectToDecrypt,2);
+                if (!stringPassword.equals("")) {
+                    CryptoUtils cryptoUtils= new CryptoUtils();
+                    cryptoUtils.crypto(stringPassword,inputFile, pathDirectToDecrypt,2);
                 }
                 leftTree.updateUI();
                 setListSecretFile(String.valueOf(pathDirectToEncrypt));
@@ -264,7 +202,7 @@ public class DesktopUI {
         frame.setVisible(true);
 
     }
-    public void makeJFileChoose(int mode){
+    private void makeJFileChoose(int mode){
         File selectedDirect = null;
         JFileChooser fileChooser = new JFileChooser(String.valueOf(pathDirectToEncrypt));
         fileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
@@ -276,16 +214,48 @@ public class DesktopUI {
         }else setPathDirectToDecrypt(selectedDirect.toPath());
     }
 
-
-    public static void main(String[] args) {
-        EventQueue.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                DesktopUI desktopUI = new DesktopUI();
+    private String validate( Frame frame){
+        JPanel panel = new JPanel(new BorderLayout(5, 5));
+        JPanel label = new JPanel(new GridLayout(0, 1, 2, 2));
+        label.add(new JLabel("Password", SwingConstants.RIGHT));
+        label.add(new JLabel("Confirm", SwingConstants.RIGHT));
+        panel.add(label, BorderLayout.WEST);
+        JPanel controls = new JPanel(new GridLayout(0, 1, 2, 2));
+        JPasswordField password1 = new JPasswordField();
+        controls.add(password1);
+        JPasswordField password2 = new JPasswordField();
+        controls.add(password2);
+        panel.add(controls, BorderLayout.CENTER);
+        String stringPassword1;
+        String stringPassword2;
+        int n = 0;
+        do {
+            password1.setText("");
+            password2.setText("");
+            if (n == 0) {
+                JOptionPane.showMessageDialog(frame, panel, "Password", JOptionPane.QUESTION_MESSAGE);
+                n++;
+                stringPassword1 = String.valueOf(password1.getPassword());
+                stringPassword2 = String.valueOf(password2.getPassword());
+            } else {
+                JOptionPane.showMessageDialog(frame, panel, "Check your password", JOptionPane.ERROR_MESSAGE);
+                stringPassword1 = String.valueOf(password1.getPassword());
+                stringPassword2 = String.valueOf(password2.getPassword());
             }
-        });
+
+
+        } while (!stringPassword1.equals(stringPassword2));
+
+        return stringPassword1;
 
     }
+    public void handleMouseEvent(MouseEvent e,JPopupMenu popupMenu) {
+        if (e.getButton() == MouseEvent.BUTTON3) {
+            popupMenu.show(e.getComponent(), e.getX(), e.getY());
+        }
+    }
+
+
 }
 
 

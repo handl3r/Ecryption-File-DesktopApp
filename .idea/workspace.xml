@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Project1:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e9bf73ee-82e6-4dd0-9a52-70099eee3585" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Project1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/CryptoUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/com/Sec/CryptoUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$3$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$4$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Sec/CryptoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Sec/CryptoUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Sec/DesktopUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Sec/DesktopUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/CryptoUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$4$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/DesktopUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/FileTreeModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/KeyGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project1/com/Sec/SimpleFileCellRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Sec/CryptoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/crypto/CryptoUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Sec/DesktopUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/DesktopUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Sec/FileTreeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/FileTreeModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Sec/KeyGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/crypto/KeyGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Sec/SimpleFileCellRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/SimpleFileCellRenderer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,22 +43,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/Sec/SimpleFileCellRenderer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+            <state relative-caret-position="135">
+              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#227#228#0" expanded="true" />
+                <element signature="e#296#297#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/Sec/KeyGenerator.java">
+        <entry file="file://$PROJECT_DIR$/src/main/crypto/KeyGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,27 +69,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/Sec/CryptoUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/main/crypto/CryptoUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102">
-              <caret line="116" column="61" lean-forward="true" selection-start-line="116" selection-start-column="61" selection-end-line="116" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/Sec/DesktopUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-109">
-              <caret line="163" column="59" lean-forward="true" selection-start-line="163" selection-start-column="59" selection-end-line="163" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#607#608#0" expanded="true" />
-                <element signature="e#631#632#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="225">
+              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -103,13 +104,21 @@
         <option value="$PROJECT_DIR$/src/com/Sec/KeyGenerator.java" />
         <option value="$PROJECT_DIR$/src/com/Sec/DesktopUI.java" />
         <option value="$PROJECT_DIR$/src/com/Sec/CryptoUtils.java" />
+        <option value="$PROJECT_DIR$/src/com/crypto/CryptoUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/crypto/DesktopUI.java" />
+        <option value="$PROJECT_DIR$/src/main/DesktopUI.java" />
+        <option value="$PROJECT_DIR$/src/main/UI/FileTreeModel.java" />
+        <option value="$PROJECT_DIR$/src/main/crypto/KeyGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/UI/DesktopUI.java" />
+        <option value="$PROJECT_DIR$/src/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/crypto/CryptoUtils.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="82" />
-    <option name="y" value="46" />
-    <option name="width" value="1201" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="10" />
+    <option name="y" value="27" />
+    <option name="width" value="1211" />
     <option name="height" value="628" />
   </component>
   <component name="ProjectView">
@@ -117,6 +126,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -126,25 +137,49 @@
             </path>
             <path>
               <item name="Project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="crypto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project1" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543904692314" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547647910705" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.arquillian" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -166,71 +201,53 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DesktopUI">
-    <configuration name="CryptoUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Sec.CryptoUtils" />
+  <component name="RunManager" selected="JAR Application.Project1.jar">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="Project1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.Sec.*" />
+          <option name="PATTERN" value="main.crypto.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Project1:jar" />
+        </option>
       </method>
     </configuration>
-    <configuration name="DesktopUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Sec.DesktopUI" />
+    <configuration name="Oke" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="Project1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.Sec.*" />
+          <option name="PATTERN" value="main.crypto.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Project1:jar" />
+        </option>
       </method>
     </configuration>
-    <configuration name="FileList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Sec.FileList" />
-      <module name="Project1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.Sec.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TreeSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Sec.TreeSystem" />
-      <module name="Project1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.Sec.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="Project1.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Project1_jar/Project1.jar" />
+      <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.TreeSystem" />
-      <item itemvalue="Application.DesktopUI" />
-      <item itemvalue="Application.CryptoUtils" />
-      <item itemvalue="Application.FileList" />
+      <item itemvalue="Application.Oke" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JAR Application.Project1.jar" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DesktopUI" />
-        <item itemvalue="Application.FileList" />
-        <item itemvalue="Application.CryptoUtils" />
-        <item itemvalue="Application.TreeSystem" />
+        <item itemvalue="JAR Application.Project1.jar" />
+        <item itemvalue="Application.Oke" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -266,18 +283,22 @@
       <workItem from="1543388789059" duration="11900000" />
       <workItem from="1543723973108" duration="13000" />
       <workItem from="1543848903204" duration="11653000" />
-      <workItem from="1543903245587" duration="1580000" />
+      <workItem from="1543903245587" duration="2346000" />
+      <workItem from="1543938934426" duration="2718000" />
+      <workItem from="1543978292901" duration="11000" />
+      <workItem from="1545968859418" duration="700000" />
+      <workItem from="1547615560633" duration="13808000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132460000" />
+    <option name="totallyTimeSpent" value="150463000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <frame x="0" y="-30" width="1366" height="798" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49878934" visible="true" weight="0.0" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49878934" visible="true" weight="0.3280303" />
       <window_info id="Structure" order="1" sideWeight="0.50121063" side_tool="true" weight="0.275" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -286,14 +307,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.07980456" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43811074" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32899022" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.45276874" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32736155" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -314,20 +335,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="235" column="71" lean-forward="true" selection-start-line="235" selection-start-column="71" selection-end-line="235" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/javax/swing/text/JTextComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="1692" column="18" selection-start-line="1692" selection-start-column="18" selection-end-line="1692" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/awt/Component.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
@@ -469,22 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Sec/FileTreeModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-            <element signature="e#532#533#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Override.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
@@ -545,13 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="143" column="25" selection-start-line="143" selection-start-column="25" selection-end-line="143" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="973" column="22" lean-forward="true" selection-start-line="973" selection-start-column="22" selection-end-line="973" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -622,13 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/FileInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2430">
-          <caret line="186" column="24" selection-start-line="186" selection-start-column="24" selection-end-line="186" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -640,65 +617,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/jre/lib/jce.jar!/javax/crypto/Cipher.class">
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/nio/file/Paths.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="630" column="22" selection-start-line="630" selection-start-column="22" selection-end-line="630" selection-end-column="22" />
+        <state relative-caret-position="210">
+          <caret line="83" column="60" selection-start-line="83" selection-start-column="60" selection-end-line="83" selection-end-column="60" />
+          <folding>
+            <element signature="e#2673#2674#0" expanded="true" />
+            <element signature="e#2741#2742#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Sec/SimpleFileCellRenderer.java">
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/File.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+        <state relative-caret-position="225">
+          <caret line="454" column="64" selection-start-line="454" selection-start-column="64" selection-end-line="454" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ui/FileTreeModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+          <folding>
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ui/SimpleFileCellRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Sec/KeyGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/ui/DesktopUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1485">
+          <caret line="105" column="52" lean-forward="true" selection-start-line="105" selection-start-column="52" selection-end-line="105" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#227#228#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/crypto/KeyGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Sec/DesktopUI.java">
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/FileInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-109">
-          <caret line="163" column="59" lean-forward="true" selection-start-line="163" selection-start-column="59" selection-end-line="163" selection-end-column="59" />
+        <state relative-caret-position="195">
+          <caret line="231" column="15" selection-start-line="231" selection-start-column="15" selection-end-line="231" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/jre/lib/jce.jar!/javax/crypto/Cipher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-            <element signature="e#631#632#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Sec/CryptoUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/crypto/CryptoUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="116" column="61" lean-forward="true" selection-start-line="116" selection-start-column="61" selection-end-line="116" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
+      <state key="ArquillianSettingsConfigurable.UI">
         <settings>
-          <artifact-editor />
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>Project1:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
